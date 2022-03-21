@@ -1,2 +1,2 @@
 # LightCheck
-Check how long your Battery lights will last
+Check how long your Battery lights will last 
