@@ -25,10 +25,10 @@ while (_checkTime):
 
         _currentTime = time.strftime("%H:%M:%S", time.localtime())
 
-        _file = open("LightCheck.csv", "a")  
-        _file.write(_currentTime + ";{:.2f}".format(_illuminance) + "\n")
+        _file = open("LightCheck.txt", "a")  
+        _file.write((_currentTime + "\t{:.2f}".format(_illuminance) + "\n").replace(".", ","))
 
-        print("Light: {:.2f} lux".format(_illuminance))
+        print(("Light: {:.2f} lux".format(_illuminance)).replace(".", ","))
         _file.close()
 
     
